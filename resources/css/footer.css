@@ -1,0 +1,48 @@
+footer {
+    position: relative;
+    /* background image footer */
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(14, 50, 143, 0.85);
+    z-index: 1;
+}
+
+footer * {
+    position: relative;
+    z-index: 2;
+}
+
+footer .contact i {
+    color: #ffc107;
+}
+footer .contact a {
+    color: white;
+    text-decoration: none;
+}
+
+footer li:hover,
+footer .list-unstyled a:hover {
+    color: #ffc107 !important;
+    padding-left: 4px;
+    transition: all 0.3s ease;
+}
+
+footer .rounded-circle:hover {
+    background-color: #ffc107 !important;
+    color: white !important;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+footer .bi-chevron-up:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
