@@ -1,11 +1,12 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "bootstrap-icons/font/bootstrap-icons.css";
-@import "navbar.css";
-@import "hero.css";
-@import "about.css";
-@import "services.css";
-@import "pricing.css";
-@import "footer.css";
+@import "../../../resources/css/navbar.css";
+@import "../../../resources/css/hero.css";
+@import "../../../resources/css/about.css";
+@import "../../../resources/css/services.css";
+@import "../../../resources/css/pricing.css";
+@import "../../../resources/css/footer.css";
+
 html {
     scroll-behavior: smooth;
 }
