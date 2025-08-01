@@ -1,0 +1,28 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "navbar.css";
+@import "hero.css";
+@import "about.css";
+@import "services.css";
+@import "pricing.css";
+@import "footer.css";
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 100px;
+    min-height: 100vh;
+}
+.section h1 {
+    margin: -50px 0 50px 0;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 18px;
+}
+.btn:hover {
+    color: black !important;
+    background-color: white;
+}
