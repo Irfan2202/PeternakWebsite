@@ -7,6 +7,8 @@
     <title>{{ $title ?? 'Page Title' }}</title>
 
     <link rel="stylesheet" href="{{ asset('build/assets/app-DvB2Xm2x.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
     @livewireStyles
 
@@ -18,6 +20,8 @@
     <livewire:footer />
     @livewireScripts
     <script src="{{ asset('build/assets/app-DURVwG0O.js') }}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
