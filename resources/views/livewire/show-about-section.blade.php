@@ -1,4 +1,4 @@
-<section class="about">
+<section class="about" id="about">
     <div class="container">
         <div class="row gy-5">
             <div class="col-lg-6 mx-auto">

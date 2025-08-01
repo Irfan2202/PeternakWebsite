@@ -1,10 +1,26 @@
-/* Navbar */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+section {
+    padding: 100px;
+    min-height: 100vh;
+}
+.section h1 {
+    margin: -50px 0 50px 0;
+}
 .navbar {
     margin-top: 0;
     background: rgba(14, 50, 143, 0.85);
 }
-
-.nav-item {
+.nav-item,
+.nav-text {
     font-size: medium;
     justify-content: center;
     align-items: center;
@@ -13,25 +29,15 @@
     z-index: 2;
 }
 
-/* About Section */
-.about h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #0e328fd9;
-}
-
-/* Carousel */
+/* carousel */
 .carousel-item {
     height: 100vh;
     position: relative;
 }
-
 .carousel-item img {
     height: 100%;
     object-fit: cover;
 }
-
 .carousel-item::before {
     content: "";
     position: absolute;
@@ -42,46 +48,59 @@
     background-color: rgba(14, 50, 143, 0.7);
     z-index: 1;
 }
-
 .carousel-caption {
     z-index: 2;
 }
-
 .carousel-caption h1 {
     padding: 20px;
 }
-
-/* Button Hover */
 .btn-icons:hover {
     border: none;
     background-color: white;
     color: black;
 }
+.btn {
+    padding: 12px 24px;
+    font-size: 18px;
+}
+.btn:hover {
+    color: black !important;
+    background-color: white;
+}
 
-/* Services Section */
+.about h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0e328fd9;
+}
+
+.about h2 span {
+    color: #0e328fd9;
+}
+/* services */
 .services {
-    background-color: rgba(14, 50, 143, 0.7);
+    background-color: #0e328fd9;
 }
-
-.services .card:hover {
-    transform: scale(1.05);
-    background-color: rgba(14, 50, 143, 0.7);
-    color: white;
-    transition: transform 0.3s ease-in-out;
-}
-
 .services h6 {
     padding: 50px 0;
 }
-
-/* Pricing Section */
-.pricing h6 {
-    padding: 50px 0;
+.services .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    background-color: rgba(14, 50, 143, 0.7);
+    color: white !important;
 }
 
-/* Footer */
+/* pricing */
+.pricing .btn:hover {
+    background-color: #ffc107;
+    color: white !important;
+}
+/* footer */
 footer {
     position: relative;
+    background-image: url("../img/slider1.jpg");
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -96,27 +115,24 @@ footer::before {
     z-index: 1;
 }
 
-footer * {
-    position: relative;
-    z-index: 2;
-}
-
-footer .contact i {
-    color: #ffc107;
-}
-
-footer .contact a {
+.contact a {
     color: white;
     text-decoration: none;
 }
 
-footer li:hover,
+/* Pastikan semua konten footer tampil di atas overlay */
+footer * {
+    position: relative;
+    z-index: 2;
+}
+/* Hover untuk link teks di footer */
 footer .list-unstyled a:hover {
     color: #ffc107 !important;
     padding-left: 4px;
     transition: all 0.3s ease;
 }
 
+/* Hover untuk ikon media sosial */
 footer .rounded-circle:hover {
     background-color: #ffc107 !important;
     color: white !important;
@@ -124,6 +140,7 @@ footer .rounded-circle:hover {
     transition: all 0.3s ease;
 }
 
+/* Hover untuk tombol scroll-to-top */
 footer .bi-chevron-up:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease;
